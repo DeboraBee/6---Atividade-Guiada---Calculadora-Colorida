@@ -33,19 +33,19 @@ layout_mode = 2
 
 [node name="expressaolabel" type="Label" parent="VBoxContainer/PanelContainer/VBoxContainer" unique_id=776147913]
 layout_mode = 2
-text = "\"\""
+text = "12/5"
 horizontal_alignment = 2
 
 [node name="resultadolabel" type="Label" parent="VBoxContainer/PanelContainer/VBoxContainer" unique_id=125900488]
 layout_mode = 2
 theme_override_font_sizes/font_size = 36
-text = "0"
+text = "2.4"
 horizontal_alignment = 2
 
 [node name="GridContainer" type="GridContainer" parent="VBoxContainer" unique_id=1535374392]
 layout_mode = 2
 size_flags_vertical = 3
-columns = 4
+columns = 3
 
 [node name="Button7" type="Button" parent="VBoxContainer/GridContainer" unique_id=1144332505 groups=["botoes"]]
 layout_mode = 2

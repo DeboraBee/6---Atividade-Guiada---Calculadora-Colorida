@@ -5,7 +5,7 @@ var numero_anterior: float = 0.0
 var operacao_atual: String = ""
 var aguardando_segundo_numero: bool = false
 
-# Dicionário ajustado para os símbolos que você usou no IF (teclado comum)
+
 var cores = {
 	"+": Color("#4CAF50"),  # verde
 	"-": Color("#FFC107"),  # amarelo
@@ -22,7 +22,6 @@ func _ready() -> void:
 func _on_button_pressed(valor: String) -> void:
 	if valor.is_valid_float():
 		digito_pressionado(valor)
-	# IMPORTANTE: Garanta que o texto nos seus botões seja exatamente um desses:
 	elif valor in ["+", "-", "*", "/", "x", "÷", "×", "−"]:
 		operacao_pressionada(valor)
 	elif valor == "=":
@@ -47,7 +46,6 @@ func digito_pressionado(valor: String) -> void:
 func operacao_pressionada(valor: String) -> void:
 	if numero_atual == "": return
 	
-	# Se já tinha uma operação pendente, ele calcula antes de seguir (opcional)
 	numero_anterior = numero_atual.to_float()
 	operacao_atual = valor
 	aguardando_segundo_numero = true
@@ -57,7 +55,6 @@ func operacao_pressionada(valor: String) -> void:
 	# LIMPA O RESULTADOLABEL PARA O PRÓXIMO NÚMERO
 	$VBoxContainer/PanelContainer/VBoxContainer/resultadolabel.text = ""
 	
-	# Tenta mudar a cor (converte símbolos visuais para os do dicionário se necessário)
 	var tecla_cor = valor
 	if valor == "x" or valor == "×": tecla_cor = "*"
 	if valor == "÷": tecla_cor = "/"
@@ -71,7 +68,6 @@ func calcular_resultado() -> void:
 	
 	var num2 = numero_atual.to_float()
 	
-	# 5. 🚫 Trate a divisão por zero!
 	if (operacao_atual == "/" or operacao_atual == "÷") and num2 == 0.0:
 		$VBoxContainer/PanelContainer/VBoxContainer/resultadolabel.text = "Erro! 🚫"
 		return
