@@ -1,10 +1,10 @@
-[gd_scene format=3 uid="uid://ddaais4pugkm"]
+[gd_scene load_steps=3 format=3 uid="uid://ddaais4pugkm"]
 
 [ext_resource type="Script" uid="uid://d0ho0enbywvej" path="res://calculadora.gd" id="1_5y10g"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_smp0k"]
 
-[node name="Calculadora" type="Control" unique_id=1839325238]
+[node name="Calculadora" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -14,7 +14,7 @@ grow_vertical = 2
 script = ExtResource("1_5y10g")
 metadata/_edit_use_anchors_ = true
 
-[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=158025342]
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
 custom_minimum_size = Vector2(1152, 648)
 layout_mode = 1
 anchors_preset = 15
@@ -23,124 +23,124 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer" unique_id=870100055]
+[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_styles/panel = SubResource("StyleBoxFlat_smp0k")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/PanelContainer" unique_id=570274940]
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/PanelContainer"]
 layout_mode = 2
 
-[node name="expressaolabel" type="Label" parent="VBoxContainer/PanelContainer/VBoxContainer" unique_id=776147913]
+[node name="expressaolabel" type="Label" parent="VBoxContainer/PanelContainer/VBoxContainer"]
 layout_mode = 2
 text = "12/5"
 horizontal_alignment = 2
 
-[node name="resultadolabel" type="Label" parent="VBoxContainer/PanelContainer/VBoxContainer" unique_id=125900488]
+[node name="resultadolabel" type="Label" parent="VBoxContainer/PanelContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 36
 text = "2.4"
 horizontal_alignment = 2
 
-[node name="GridContainer" type="GridContainer" parent="VBoxContainer" unique_id=1535374392]
+[node name="GridContainer" type="GridContainer" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 columns = 3
 
-[node name="Button7" type="Button" parent="VBoxContainer/GridContainer" unique_id=1144332505 groups=["botoes"]]
+[node name="Button7" type="Button" parent="VBoxContainer/GridContainer" groups=["botoes"]]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "7"
 
-[node name="Button8" type="Button" parent="VBoxContainer/GridContainer" unique_id=2001538298 groups=["botoes"]]
+[node name="Button8" type="Button" parent="VBoxContainer/GridContainer" groups=["botoes"]]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "8"
 
-[node name="Button9" type="Button" parent="VBoxContainer/GridContainer" unique_id=160530305 groups=["botoes"]]
+[node name="Button9" type="Button" parent="VBoxContainer/GridContainer" groups=["botoes"]]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "9"
 
-[node name="Button4" type="Button" parent="VBoxContainer/GridContainer" unique_id=1511049512 groups=["botoes"]]
+[node name="Button4" type="Button" parent="VBoxContainer/GridContainer" groups=["botoes"]]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "4"
 
-[node name="Button5" type="Button" parent="VBoxContainer/GridContainer" unique_id=351916482 groups=["botoes"]]
+[node name="Button5" type="Button" parent="VBoxContainer/GridContainer" groups=["botoes"]]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "5"
 
-[node name="Button6" type="Button" parent="VBoxContainer/GridContainer" unique_id=1025008695 groups=["botoes"]]
+[node name="Button6" type="Button" parent="VBoxContainer/GridContainer" groups=["botoes"]]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "6"
 
-[node name="Button1" type="Button" parent="VBoxContainer/GridContainer" unique_id=1175703576 groups=["botoes"]]
+[node name="Button1" type="Button" parent="VBoxContainer/GridContainer" groups=["botoes"]]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "1"
 
-[node name="Button2" type="Button" parent="VBoxContainer/GridContainer" unique_id=423672130 groups=["botoes"]]
+[node name="Button2" type="Button" parent="VBoxContainer/GridContainer" groups=["botoes"]]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "2"
 
-[node name="Button3" type="Button" parent="VBoxContainer/GridContainer" unique_id=49228708 groups=["botoes"]]
+[node name="Button3" type="Button" parent="VBoxContainer/GridContainer" groups=["botoes"]]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "3"
 
-[node name="ButtonC" type="Button" parent="VBoxContainer/GridContainer" unique_id=1835123765 groups=["botoes"]]
+[node name="ButtonC" type="Button" parent="VBoxContainer/GridContainer" groups=["botoes"]]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "C"
 
-[node name="Button" type="Button" parent="VBoxContainer/GridContainer" unique_id=1858929711 groups=["botoes"]]
+[node name="Button" type="Button" parent="VBoxContainer/GridContainer" groups=["botoes"]]
 layout_mode = 2
 text = "0"
 
-[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer" unique_id=753689513]
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 alignment = 1
 
-[node name="Button+" type="Button" parent="VBoxContainer/HBoxContainer" unique_id=300708761 groups=["botoes"]]
+[node name="Button+" type="Button" parent="VBoxContainer/HBoxContainer" groups=["botoes"]]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "+"
 
-[node name="Button-" type="Button" parent="VBoxContainer/HBoxContainer" unique_id=2040074713 groups=["botoes"]]
+[node name="Button-" type="Button" parent="VBoxContainer/HBoxContainer" groups=["botoes"]]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "-"
 
-[node name="Button*" type="Button" parent="VBoxContainer/HBoxContainer" unique_id=362716301 groups=["botoes"]]
+[node name="Button*" type="Button" parent="VBoxContainer/HBoxContainer" groups=["botoes"]]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "×"
 
-[node name="Button÷" type="Button" parent="VBoxContainer/HBoxContainer" unique_id=509011023 groups=["botoes"]]
+[node name="Button÷" type="Button" parent="VBoxContainer/HBoxContainer" groups=["botoes"]]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "÷"
 
-[node name="Button=" type="Button" parent="VBoxContainer/HBoxContainer" unique_id=1420136693 groups=["botoes"]]
+[node name="Button=" type="Button" parent="VBoxContainer/HBoxContainer" groups=["botoes"]]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3

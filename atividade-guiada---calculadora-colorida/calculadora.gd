@@ -35,6 +35,7 @@ func mudar_cor(cor: Color) -> void:
 	estilo.bg_color = cor
 	painel.add_theme_stylebox_override("panel", estilo)
 
+# Tratando o número que aparece na tela
 func digito_pressionado(valor: String) -> void:
 	if aguardando_segundo_numero:
 		numero_atual = ""
@@ -43,6 +44,7 @@ func digito_pressionado(valor: String) -> void:
 	numero_atual += valor
 	$VBoxContainer/PanelContainer/VBoxContainer/resultadolabel.text = numero_atual
 
+# Tratando primeiro e segundo número, e cor da tecla
 func operacao_pressionada(valor: String) -> void:
 	if numero_atual == "": return
 	
@@ -63,6 +65,7 @@ func operacao_pressionada(valor: String) -> void:
 	if cores.has(tecla_cor):
 		mudar_cor(cores[tecla_cor])
 
+# Trata nenhum número, transforma número em float, trata divisão por zero
 func calcular_resultado() -> void:
 	if operacao_atual == "" or numero_atual == "": return
 	
@@ -92,6 +95,7 @@ func calcular_resultado() -> void:
 	numero_atual = str(resultado)
 	operacao_atual = ""
 
+# Tratar a tecla C, reinicar todas as variáveis
 func resetar_calculadora() -> void:
 	numero_atual = ""
 	numero_anterior = 0.0
